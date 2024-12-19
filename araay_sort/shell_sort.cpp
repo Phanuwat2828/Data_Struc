@@ -1,21 +1,21 @@
 #include <stdio.h>
 int* shell_sort(int data[],int N){
-    int k = N/2;
-    while(k>=1){
-        int i=k;
+    int K = N/2;
+    while(K>=1){
+        int i=K;
         while (i<=N-1){
            int temp = data[i];
            int j=i;
-           while(j>k-1 && data[j-k] > temp){
-                data[j] = data[j-k];
-                j = j-k ;
+           while(j>K-1 && data[j-K] > temp){
+                data[j] = data[j-K];
+                j = j-K ;
                 data[j] = temp;
            }
            i++;
         }
-        k=k/2;
+        K=K/2;
     }
-    return data; 
+    return data;
 }
 int main(){
     int number[] = {34, 10, 39, 49, 24, 42, 9,0,99,1};

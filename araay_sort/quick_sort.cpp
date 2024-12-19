@@ -21,6 +21,7 @@ int* quick_sort(int data[],int start,int end){
             }
         }
         swap_array(data,start,r);
+        // =========== Recursive function ============
         quick_sort(data,start,r-1);
         quick_sort(data,r+1,end);
     }

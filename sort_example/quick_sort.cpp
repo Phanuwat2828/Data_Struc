@@ -27,7 +27,7 @@ int* quick_sort(int data[],int start,int end){
                 printf("%d<=%d and %d <= %d and %d > %d \n",data[f],pivot,f,end,r,f);
                 f++;
             }
-                  printf("%d<=%d and %d <= %d and %d > %d False\n",data[f],pivot,f,end,r,f);
+            printf("%d<=%d and %d <= %d and %d > %d False\n",data[f],pivot,f,end,r,f);
             printf("\n======================== loop R ================================\n\n");
             while(data[r] > pivot && r >= start && r>=f){
                 printf("%d > %d and %d >= %d and %d >= %d \n",data[r],pivot,r,start,r,f);
@@ -42,7 +42,6 @@ int* quick_sort(int data[],int start,int end){
                 swap_array(data,f,r);
                 printf("swap = ");
                 data_show(data,start,end);
-                
             }
         }
         printf("End Real\n");
