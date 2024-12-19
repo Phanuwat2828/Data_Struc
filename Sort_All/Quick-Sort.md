@@ -237,7 +237,34 @@ int main(){
 ```
 
 ```
+quick_sort(data,start,r-1);
+{ [24, 10, 0, 9], [34], 42, 49, 39, 99};
 
-
+int* quick_sort(int data[],int start,int end){
+    int f = start; f = 0
+    int r = end; r = 3
+    if(end > start){ 3 > 0 = true
+        int pivot = data[start];  = 24
+        while(r > f){ 
+		     รอบ 1 r > 0 = true
+		     
+            while(data[f] <= pivot && f<= end && r>f){
+	            data[f] <= pivot && f<= end && r>f
+	            
+                f++;
+            }
+            while(data[r] > pivot && r >= start && r>=f){
+                r--;
+            }
+            if(r>f){
+                swap_array(data,f,r);
+            }
+        }
+        swap_array(data,start,r);
+        quick_sort(data,start,r-1);
+        quick_sort(data,r+1,end);
+    }
+    return data;
+}
 ```
 
