@@ -48,6 +48,7 @@ int* quick_sort(int data[],int start,int end){
         swap_array(data,start,r);
         printf("swap = ");
         data_show(data,start,end);
+        // ================= Recursive
         quick_sort(data,start,r-1);
         quick_sort(data,r+1,end);
     }
