@@ -17,12 +17,12 @@ void bubble_sort(int data[],int size){
                 data[i] = data[i + 1];  
                 data[i + 1] = temp;  
                 swapped = 1;  
-             }  
+            }  
          }  
   
         if (swapped == 0) {  
              break;  
-         }  
+        }  
      } 
      printArray(data,size);
 }
