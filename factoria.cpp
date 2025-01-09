@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int Factorial(int n){
     if(n==0){
         return 1;
@@ -8,7 +7,11 @@ int Factorial(int n){
     }
 }
 int main(){
-    int num = 5;
     int sum = 1;
-    printf("%d",Factorial(5));
+    int num1 = -1;
+    while (num1 < 0)
+    {
+       scanf("%d",&num1);
+    }
+    printf("%d",Factorial(num1));
 }
