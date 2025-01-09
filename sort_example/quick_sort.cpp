@@ -7,11 +7,11 @@ void swap_array(int data[],int swap1,int swap2){
 void data_show(int data[],int start,int end){
     for(int i=start;i<=end;i++){
         printf("%d,",data[i]);
-   
     }
     printf("\n");
 }
 int* quick_sort(int data[],int start,int end){
+    //  {34, 10, 39, 49, 24, 42, 9,0,99};
     int f = start; 
     int r = end; 
     printf("\n========================================================\n");
@@ -48,6 +48,7 @@ int* quick_sort(int data[],int start,int end){
         swap_array(data,start,r);
         printf("swap = ");
         data_show(data,start,end);
+        // ================= Recursive 
         quick_sort(data,start,r-1);
         quick_sort(data,r+1,end);
     }
