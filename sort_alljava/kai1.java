@@ -11,10 +11,6 @@ public class kai1 {
             }
             data[j + 1] = key;
         }
-        for (int i = 0; i < n; i++) {
-            System.out.println(data[i]);
-        }
-
     }
 
     public static void main(String[] args) {

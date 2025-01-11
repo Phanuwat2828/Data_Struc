@@ -1,3 +1,6 @@
+package sort_alljava;
+
+import java.util.Scanner;
 
 public class quicksort {
     public void swap_array(int data[], int swap1, int swap2) {
@@ -12,10 +15,10 @@ public class quicksort {
         if (end > start) {
             int pivot = data[start];
             while (r > f) {
-                while (data[f] <= pivot && f <= end && r > f) {
+                while (data[f] < pivot && f <= end && r > f) {
                     f++;
                 }
-                while (data[r] > pivot && r >= start && r >= f) {
+                while (data[r] >= pivot && r >= start && r >= f) {
                     r--;
                 }
                 if (r > f) {
