@@ -16,7 +16,7 @@ int main(){
     {
         push(number%base5);
         number = number/base5;       
-    }]
+    }
     show();
     printf("\n\n");
     while (top>=0)

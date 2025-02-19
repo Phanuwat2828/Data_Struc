@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "Quick-Sort"
             }
+          },
+          {
+            "id": "42c919a682e7c4e7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,6 +173,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fda71cc92cda6077",
-  "lastOpenFiles": []
+  "active": "42c919a682e7c4e7",
+  "lastOpenFiles": [
+    "Quick-Sort.md"
+  ]
 }
