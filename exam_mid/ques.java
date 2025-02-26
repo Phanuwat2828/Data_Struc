@@ -1,3 +1,4 @@
+package exam_mid;
 public class ques {
     public static String exam = "+*123";
     

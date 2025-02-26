@@ -66,7 +66,6 @@ public class DoublyLinkedList {
 
     }
 
-    // เพิ่ม Node ที่ขวาสุด
     public void add2Right(Node p, String data) {
         Node Q = new Node(data);
 
@@ -88,7 +87,6 @@ public class DoublyLinkedList {
         p.RLink = Q;
     }
 
-    // พิมพ์ข้อมูลทั้งหมดในลิสต์
     public void print() {
         Node p = head;
         while (p != null) {

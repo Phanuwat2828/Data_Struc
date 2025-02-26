@@ -1,4 +1,4 @@
-package stack;
+package exam_mid;
 
 import java.util.Scanner;
 
