@@ -3,7 +3,7 @@ package Exam_;
 import java.util.Scanner;
 
 public class shell {
-    public static void show(int[] data, int n) {
+    public static void show(int[] data) {
         for (int i = 0; i < data.length; i++) {
             System.out.printf("%d", data[i]);
             if (i < data.length - 1) {
@@ -27,7 +27,7 @@ public class shell {
                 }
                 i++;
             }
-            show(data, N);
+            show(data);
             K = K / 2;
         }
 

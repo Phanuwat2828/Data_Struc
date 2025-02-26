@@ -1,4 +1,4 @@
-public class program_4 {
+public class ques {
     public static String exam = "+*123";
     
     public static void main(String args[]){

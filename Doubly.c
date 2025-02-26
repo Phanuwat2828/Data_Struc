@@ -86,12 +86,15 @@ void Add2Right(node *p, int data){
     p->RLink = Q;
 }
 
+
 void print(){
     node *p = head;
     while(p != NULL){
-        
-        printf("%d ", p->data);
-
+        if(p->RLink==NULL){
+            printf("%d",p -> data);
+        }else{
+            printf("%d ",p -> data);
+        }
         p = p -> RLink;
     }
     printf("\n");

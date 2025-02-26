@@ -25,13 +25,13 @@ int main(){
     p->RLink = NULL;
     head = last = p;
     print();
-    Add2Left(head,num[1]);
+    Add2Left(p,num[1]);
     print();
-    Add2Right(last,num[2]);
+    Add2Right(p,num[2]);
     print();
-    Add2Right(head,num[3]);
+    Add2Left(p,num[3]);
     print();
-    Add2Left(last,num[4]);
+    Add2Right(p,num[4]);
     print();
     return 0;
 }
@@ -75,6 +75,19 @@ void Add2Right(node *p,int Data){
     p->RLink->LLink = Q;
     p->RLink = Q;
 }
+void print(){
+    node *p = head;
+    while(p != NULL){
+        if(p->RLink==NULL){
+            printf("%d",p -> Data);
+        }else{
+            printf("%d ",p -> Data);
+        }
+        p = p -> RLink;
+    }
+    printf("\n");
+}
+
 void print(){
     node *p = head;
     while(p != NULL){
