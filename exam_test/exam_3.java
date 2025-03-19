@@ -1,4 +1,3 @@
-package exam_test;
 
 import java.util.Scanner;
 
